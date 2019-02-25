@@ -38,3 +38,41 @@ body {
   max-width: 1000px;
   margin: auto;
 }
+
+.fa-2x{
+  color:#45A9E1 !important;
+}
+
+.feature-text{
+font-size: 1.5em;
+padding-left: 10px;
+padding-right: 10px;
+
+}
+
+//header
+.section-header{
+margin-bottom: 2.8em;
+border-bottom:1px solid #dadada;
+}
+
+
+h2 .h1{
+font-size: 1.7em;
+line-height: 1.6em;
+display: inline-block;
+padding-bottom:.4em;
+position: relative;
+margin-bottom:0;
+border-bottom: 2px solid #45a9e1;
+font-family: 'Poppins', sans-serif;
+}
+
+.dark-grey-text{
+  color: blue !important;
+}
+
+//search bcar
+.features{
+border-right: 1px solid #DDD;
+}
