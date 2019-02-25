@@ -1,0 +1,20 @@
+<div class="col-sm-12 col-lg-2 side-filter" style="margin-top:120px;">
+
+<h4>Buscar</h4>
+
+<%#= form_tag items_path, :method => 'get' do %>
+<%#= text_field_tag :search, params[:search], class: "texto-filtro" %>
+<%# end %>
+
+<%= simple_form_for (Search.new) do |f| %>
+<%= f.input :marca, :collection => %W[Sonos #{"LD Systems"}], as: :radio_buttons, :label => "Marca" %>
+<%= f.input :categoria, :collection => %W[Activo Subwoofers Empotrados #{"Parlantes de Instalacion"}  #{"Parlante Wireless"} Soporte #{"Soporte de Muro"} #{"Adaptador Wireless"} #{"Subwoofer Wireless"} #{"Sistema PA"}], as: :radio_buttons, :label => "Categoria" %>
+<%= f.input :min_price, :label => "Precio Minimo", input_html: { min: '0', step: 'any' } %>
+<%= f.input :max_price, :label => "Precio Maximo", input_html: { min: '0', step: 'any' } %>
+<%= f.input :color, :collection => %W[Blanco Negro #{"Blanco & Negro"}], as: :radio_buttons %>
+<%= f.button :submit, 'Buscar', class: 'btn-block' %>
+<% end %>
+
+</div>
+
+

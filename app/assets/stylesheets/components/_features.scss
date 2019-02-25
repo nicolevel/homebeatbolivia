@@ -1,0 +1,22 @@
+.features-list{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+margin-bottom:2.5em;
+margin-left: 0;
+margin-right: 0;
+}
+
+.features-list.columns-5 .feature{
+  width: 20%;
+}
+
+.features-list .feature{
+padding-top:2.1em;
+padding-bottom: 2.1em;
+position: relative;
+float: left;
+min-height:1px;
+padding-left: .9rem;
+padding-right: .9rem;
+
+}

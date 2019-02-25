@@ -1,2 +1,23 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<script>
+
+</script>
+
+
+<%= render 'shared/banner' %>
+
+<div class="features-list columns-5 mt-5">
+  <div class="feature">
+    <div class="media">
+      <div class="media-left media-middle feature-icon"> <i class="ec ec-transport"></i></div>
+      <div class="media-body media-middle feature-text"> <strong>Free Delivery</strong> from $50</div></div></div><div class="feature">
+        <div class="media"><div class="media-left media-middle feature-icon"> <i class="ec ec-customers"></i></div>
+        <div class="media-body media-middle feature-text"> <strong>99% Positive</strong> Feedbacks</div></div></div>
+      <div class="feature"><div class="media"><div class="media-left media-middle feature-icon"> <i class="ec ec-returning"></i></div><div class="media-body media-middle feature-text"> <strong>365 days</strong> for free return</div></div></div><div class="feature"><div class="media"><div class="media-left media-middle feature-icon"> <i class="ec ec-payment"></i></div><div class="media-body media-middle feature-text"> <strong>Payment</strong> Secure System</div></div></div><div class="feature"><div class="media"><div class="media-left media-middle feature-icon"> <i class="ec ec-tag"></i></div><div class="media-body media-middle feature-text"> <strong>Only Best</strong> Brands</div></div></div></div>
+
+<%= render 'shared/brands' %>
+
+<form class="navbar-search" method="get" action="https://demo2.chethemes.com/electro/"> <label class="sr-only screen-reader-text" for="search">Search for:</label><div class="input-group"><div class="input-search-field"> <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" id="search" class="form-control search-field product-search-field tt-input" dir="ltr" value="" name="s" placeholder="Search for Products" spellcheck="false" aria-activedescendant="" aria-owns="search_listbox" role="combobox" aria-readonly="true" aria-autocomplete="list" style="position: relative; vertical-align: top;"><span role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Open Sans&quot;, HelveticaNeue-Light, &quot;Helvetica Neue Light&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Lucida Grande&quot;, sans-serif; font-size: 14.994px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;"></pre><div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div role="presentation" class="tt-dataset tt-dataset-search"></div></div></span></div><div class="input-group-addon search-categories"> <select name="product_cat" id="product_cat" class="postform resizeselect" style="width: 143px;"><option value="0" selected="selected">All Categories</option><option class="level-0" value="home-entertainment">Home Entertainment</option><option class="level-0" value="laptops-computers">Laptops &amp; Computers</option><option class="level-0" value="cameras-photography">Cameras &amp; Photography</option><option class="level-0" value="smart-phones-tablets">Smart Phones &amp; Tablets</option><option class="level-0" value="video-games-consoles">Video Games &amp; Consoles</option><option class="level-0" value="tv-audio">TV &amp; Audio</option><option class="level-0" value="gadgets">Gadgets</option><option class="level-0" value="printers-ink">Printers &amp; Ink</option><option class="level-0" value="computer-components">Computer Components</option><option class="level-0" value="accessories">Accessories</option> </select></div><div class="input-group-btn"> <input type="hidden" id="search-param" name="post_type" value="product"> <button type="submit" class="btn btn-secondary"><i class="ec ec-search"></i></button></div></div></form>
+
+
+<%= render 'shared/features' %>
+<%= render 'shared/moredetails' %>

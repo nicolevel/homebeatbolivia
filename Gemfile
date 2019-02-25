@@ -16,6 +16,8 @@ gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+gem 'breadcrumbs_on_rails'
+gem 'rails_12factor', group: :production
 
 group :development do
   gem 'web-console', '>= 3.3.0'
