@@ -1,8 +1,38 @@
-<div style="background-color: #ddd; height: 35vh;">
-  <%= form_tag items_path, :method => 'get' do %>
-  <%= text_field_tag :search, params[:search], class: "texto-filtro" %>
-  <% end %>
+<script>
+var search = document.getElementById("search");
+var field = document.getElementById("field");
+var icon = document.getElementById("icon");
+
+function clicked() {
+ search.classList.add("open");
+ field.setAttribute("placeholder", "zB: Bananen");
+ icon.setAttribute("src", "https://cdn4.iconfinder.com/data/icons/geomicons/32/672366-x-128.png");
+ icon.setAttribute("onclick", "normal()");
+
+}
+function normal() {
+  search.classList.remove("open");
+  field.removeAttribute("placeholder");
+  icon.setAttribute("src", "http://www.brambauer.de/img/search.png");
+  icon.setAttribute("onclick", "clicked()");
+}
+</script>
+
+
+<!--
+<div class="container" style="margin-top: 15%">
+<div class="wrap" >
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="Buscar">
+      <button type="submit" class="searchButton">
+        <i class="fas fa-search fa-2x"></i>
+     </button>
+   </div>
 </div>
+</div> -->
+
+
+
 <%= render 'shared/banner' %>
 <%= render 'shared/info' %>
 

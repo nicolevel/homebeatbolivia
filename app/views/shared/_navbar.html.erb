@@ -15,7 +15,7 @@
   <div class="collapse navbar-collapse" id="basicExampleNav">
 
     <!-- Links -->
-    <ul class="navbar-nav ml-auto" >
+    <ul class="navbar-nav d-flex justify-content-center" >
           <!-- Dropdown -->
       <li class="nav-item dropdown navbarlink">
         <!-- a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
@@ -65,11 +65,10 @@
 
 
     </ul>
-      <form class="form-inline" style="margin-left: 45px; font-size: 15px !important; border: none !important; box-shadow: none !important">
-      <div class="md-form my-0">
-        <input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
-      </div>
-    </form>
+ <form id="search" >
+  <input id="field" onfocus="clicked()" onblur="normal()" type="text" />
+  <img onclick="clicked()" id="icon" src="http://www.brambauer.de/img/search.png" >
+</form>
   </div>
 
 
