@@ -12,6 +12,7 @@ function clicked() {
 }
 function normal() {
   search.classList.remove("open");
+  field.setAttribute("placeholder", "Buscar");
   field.removeAttribute("placeholder");
   icon.setAttribute("src", "http://www.brambauer.de/img/search.png");
   icon.setAttribute("onclick", "clicked()");
