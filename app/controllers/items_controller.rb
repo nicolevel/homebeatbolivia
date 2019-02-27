@@ -41,12 +41,12 @@ class ItemsController < ApplicationController
 
   def update
     @item.update(item_params)
-    redirect_to products_path
+    redirect_to items_path
   end
 
   def destroy
     @item.destroy(item_params)
-    redirect_to products_path
+    redirect_to items_path
   end
 
   private
