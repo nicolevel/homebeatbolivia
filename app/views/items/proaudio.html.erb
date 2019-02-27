@@ -1,1 +1,73 @@
-<%= render 'shared/filters' %>
+
+<div class="container-fluid page-wrapper" style="margin-top: 30px;>
+
+  <div class="page-inner">
+<%= render "shared/filters" %>
+
+    <div class="row nosidespace" style="margin-top: 100px;">
+
+      <% @items.each do |item| %>
+      <% if item.disponible && item.features == "proaudio" %>
+      <%= link_to item_path(item[:id]) do %>
+
+      <div class="el-wrapper col-xs-6 col-sm-6 col-md-6 col-lg-3" style="border: 1px solid #D8D8D8;">
+        <div class="box-up">
+          <%= cl_image_tag item.photo, class: "picture-client" %>
+          <!-- <img class="img" src="http://code.slicecrowd.com/labs/4/images/t-shirt.png" alt=""> -->
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name"><%= link_to item.nombre.upcase, item_path(item[:id]) %></span>
+              <span class="p-company"><%= item.marca %></span>
+            </div>
+            <div class="a-size"><%= item.features %></div>
+          </div>
+        </div>
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+          <a class="cart" href="#">
+            <span class="price">$ <%= item.precio %></span>
+            <span class="add-to-cart">
+              <span class="txt"> MAS INFO</span>
+            </span>
+          </a>
+        </div>
+        <% end %>
+      </div>
+      <% end %>
+      <% else %>
+      <%= link_to item_path(item[:id]) do %>
+      <div class="el-wrapper col-xs-6 col-sm-6 col-md-6 col-lg-3 disable" style="border: 1px solid #D8D8D8;">
+        <div class="box-up">
+          <%= cl_image_tag item.photo, class: "picture-client" %>
+          <!-- <img class="img" src="http://code.slicecrowd.com/labs/4/images/t-shirt.png" alt=""> -->
+          <div class="img-info">
+            <div class="info-inner">
+              <span class="p-name"><%= link_to item.nombre, item_path(item[:id]) %></span>
+              <span class="p-company"><%= item.marca %></span>
+            </div>
+            <div class="a-size"><%= item.features %></div>
+          </div>
+        </div>
+        <div class="box-down">
+          <div class="h-bg">
+            <div class="h-bg-inner"></div>
+          </div>
+
+          <a class="cart" href="#">
+            <span class="price">$ <%= item.precio %></span>
+            <span class="add-to-cart">
+              <span class="txt"> <% link_to item_path(item[:id]) %> MAS INFO</span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <% end %>
+      <% end %>
+
+
+    </div>
+  </div>
+</div>
+
