@@ -17,9 +17,6 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'breadcrumbs_on_rails'
-gem 'rails_admin', '~> 1.3'
-gem 'cloudinary', '~> 1.9.1'
-gem 'carrierwave', '~> 1.2'
 gem 'rails_12factor', group: :production
 
 group :development do

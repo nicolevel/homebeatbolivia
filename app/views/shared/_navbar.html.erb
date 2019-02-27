@@ -11,19 +11,11 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <form id="search" >
-    <input id="field" onfocus="clicked()" onblur="normal()" type="text" placeholder="Buscar" />
-    <img onclick="clicked()" id="icon"  >
-  </form>
-
-    <%#= form_tag items_path, :method => 'get' do %>
-    <%#= text_field_tag :search, params[:search], class: "texto-filtro" %>
-    <%# end %>
   <!-- Collapsible content -->
   <div class="collapse navbar-collapse" id="basicExampleNav">
 
     <!-- Links -->
-    <ul class="navbar-nav ml-auto" >
+    <ul class="navbar-nav d-flex justify-content-center" >
           <!-- Dropdown -->
       <li class="nav-item dropdown navbarlink">
         <!-- a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
@@ -73,7 +65,10 @@
 
 
     </ul>
-
+ <form id="search" >
+  <input id="field" onfocus="clicked()" onblur="normal()" type="text" />
+  <img onclick="clicked()" id="icon" src="http://www.brambauer.de/img/search.png" >
+</form>
   </div>
 
 
