@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show, :corporativo, :homeaudio, :proaudio]
+  add_breadcrumb "Inicio", :items_path
 
   def index
     @items = Item.search(params[:search])
@@ -51,7 +52,7 @@ class ItemsController < ApplicationController
   private
 
   def item_params
-    params.require(:items).permit(:nombre, :descripcion, :precio, :category, :marca, :color)
+    params.require(:items).permit(:nombre, :descripcion, :precio, :category, :marca, :color, :photo)
   end
 
   def set_item
