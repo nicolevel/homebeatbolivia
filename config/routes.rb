@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'items/homeaudio'
   get 'items/index'
   get 'items/proaudio'
+  get 'pages/garantia'
 
   devise_for :users
   root to: 'pages#home'
@@ -14,3 +15,4 @@ Rails.application.routes.draw do
   resources :searches
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
+

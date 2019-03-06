@@ -196,6 +196,11 @@ html {
     background-color: #000;
 }
 
+.picture-client{
+  height: 200px !important;
+  width: 270px !important;
+}
+
 .picture-client:hover{
   opacity: 0.4;
     filter: alpha(opacity=40); /* msie */
