@@ -12,12 +12,16 @@
   </button>
 
   <!-- Collapsible content -->
-  <div class="collapse navbar-collapse" id="basicExampleNav">
+  <div class="collapse navbar-collapse ml-auto" id="basicExampleNav">
 
     <!-- Links -->
     <ul class="navbar-nav " >
           <!-- Dropdown -->
-      <li class="nav-item dropdown navbarlink">
+      <li class="nav-item navbarlink">
+          <%= link_to 'Inicio', root_path %>
+      </li>
+
+      <li class="nav-item navbarlink">
         <!-- a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false"> -->
           <%= link_to 'Pro Audio', items_proaudio_path %>
@@ -30,7 +34,7 @@
         </div> -->
       </li>
           <!-- Dropdown -->
-      <li class="nav-item dropdown navbarlink" >
+      <li class="nav-item navbarlink" >
           <%= link_to 'Home Audio', items_homeaudio_path %>
         <!-- <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" -->
           <!-- aria-expanded="false">Stereo</a> -->
@@ -41,7 +45,7 @@
         </div> -->
       </li>
           <!-- Dropdown -->
-      <li class="nav-item dropdown navbarlink">
+      <li class="nav-item  navbarlink">
           <%= link_to 'Corporativo', items_corporativo_path %>
         <!-- <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">Parlantes</a> -->
@@ -52,7 +56,7 @@
         </div> -->
       </li>
           <!-- Dropdown -->
-      <li class="nav-item dropdown navbarlink">
+      <li class="nav-item  navbarlink">
           <%= link_to 'Tienda', items_path %>
         <!-- <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">Audifonos</a> -->
@@ -62,14 +66,11 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div> -->
       </li>
-
-
     </ul>
- <form id="search" >
-  <input id="field" onfocus="clicked()" onblur="normal()" type="text" placeholder="Buscar" />
-  <img onclick="clicked()" id="icon" src="http://www.brambauer.de/img/search.png" >
-</form>
-  </div>
 
-
+   <form id="search" >
+    <input id="field" onfocus="clicked()" onblur="normal()" type="text" placeholder="Buscar" />
+    <img onclick="clicked()" id="icon" src="http://www.brambauer.de/img/search.png" >
+  </form>
+</div>
 </nav>
