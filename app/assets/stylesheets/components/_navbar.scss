@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900i');
+.navbar{
+  font-family: 'Roboto', sans-serif !important;
+}
 .active{
   font-weight: bold;
 }
@@ -6,6 +9,7 @@
 .nav-link a{
   padding: 0px 500px;
   font-size: 1.5em;
+font-family: 'Roboto', sans-serif;
 }
 
 .style_image{
@@ -21,6 +25,7 @@
   padding-left: 40px;
   text-decoration: none !important;
   color: gray !important;
+font-family: 'Roboto', sans-serif;
 
 }
 .navbar-fixed-top.scrolled {
@@ -48,8 +53,10 @@
   width: 250px;
   height: 27px;
   border-radius: 10px;
-  position: relative;
-  left: 10%;
+  position: absolute;
+  top: 39%;
+  left:81%;
+  // left: 10%;
   cursor: pointer;
   margin: 0 auto;
   transition: all 0.3s;
@@ -75,7 +82,7 @@
   padding-left: 20px;
   box-sizing: border-box;
   line-height: 2;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 100;
 }
 #search input:focus {
@@ -84,13 +91,14 @@
 #search:hover {
 
 }
-#search.open {
-  width: 300px;
-}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #search{
+    display:none !important;
+  }
+  .nodisplay{
     display:none !important;
   }
 }
@@ -100,6 +108,10 @@
   #search{
     display:none !important;
   }
+    .nodisplay{
+    display:none !important;
+  }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -107,6 +119,10 @@
   #search{
     display:none !important;
   }
+    .nodisplay{
+    display:none !important;
+  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -114,11 +130,18 @@
   #search{
     display:none !important;
   }
+    .nodisplay{
+    display:block !important;
+  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   #search{
+    display:block !important;
+  }
+      .nodisplay{
     display:block !important;
   }
 }
@@ -156,4 +179,31 @@
 }
 .dropdown-menu>li {
     display: table-cell;
+}
+
+
+.custom-carets .dptg:after {
+font-family: FontAwesome;
+content: "\f107";
+padding-left: 5px;
+}
+
+.custom-carets .dptg > span.caret {
+  display: none;
+}
+
+.uppercase{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #383838 !important;
+
+}
+
+.dropdown-item{
+  color: #383838 !important;
+}
+
+.dropdown-item:hover{
+  background-color: #fff !important;
+  color: black !important;
 }
