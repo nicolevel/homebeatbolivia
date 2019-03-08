@@ -17,47 +17,137 @@
     <!-- Links -->
     <ul class="navbar-nav " >
           <!-- Dropdown -->
-      <li class="nav-item navbarlink">
-          <%= link_to 'Inicio', root_path %>
+
+      <li class="nav-item " style="position: initial;">
+        <a class="nav-link" aria-haspopup="true"
+          aria-expanded="false">Inicio</a>
       </li>
 
-      <li class="nav-item navbarlink">
+    <li class="nav-item dropdown" style="position: initial;">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">ProAudio</a>
+        <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink" style="width: 100%">
+          <a class="dropdown-item" href="#">Altavoces de instalacion</a>
+          <a class="dropdown-item" href="#">Monitores</a>
+          <a class="dropdown-item" href="#">Sistemas completos de PA</a>
+          <a class="dropdown-item" href="#">Subwoffers</a>
+          <a class="dropdown-item" href="#">Amplificadores y processadores de senal</a>
+          <a class="dropdown-item" href="#">Mesas de Mezcla</a>
+          <a class="dropdown-item" href="#">Microfonos</a>
+          <a class="dropdown-item" href="#">Audifonos & Monitoreo In Air</a>
+          <a class="dropdown-item" href="#">Sistemas Touring</a>
+          <a class="dropdown-item" href="#">Cabezas Moviles / Iluminacion LED / Lasers</a>
+          <a class="dropdown-item" href="#">Cables & Conectores</a>
+          <a class="dropdown-item" href="#">Soporte & Pedestales</a>
+        </div>
+      </li>
+
+
+    <li class="nav-item dropdown" style="position: initial;">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">Home Audio</a>
+        <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink" style="width: 100%">
+          <a class="dropdown-item" href="#">Altavoces de instalacion</a>
+          <a class="dropdown-item" href="#">Sistemas completos de PA</a>
+          <a class="dropdown-item" href="#">Subwoffers</a>
+          <a class="dropdown-item" href="#">Amplificadores y processadores de senal</a>
+          <a class="dropdown-item" href="#">Mesas de Mezcla</a>
+          <a class="dropdown-item" href="#">Microfonos</a>
+          <a class="dropdown-item" href="#">Audifonos in Air</a>
+          <a class="dropdown-item" href="#">Sistemas Touring</a>
+          <a class="dropdown-item" href="#">Soporte Pedestales</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown" style="position: initial;">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">Corporativo</a>
+        <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink" style="width: 100%">
+          <a class="dropdown-item" href="#">Monitores & Pizarra interactivas</a>
+          <a class="dropdown-item" href="#">Proyectores</a>
+          <a class="dropdown-item" href="#">Telones</a>
+          <a class="dropdown-item" href="#">Microfonos</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown" style="position: initial;">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">Audifonos</a>
+        <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink" style="width: 100%">
+          <a class="dropdown-item" href="#">Monitores & Pizarra interactivas</a>
+          <a class="dropdown-item" href="#">Proyectores</a>
+          <a class="dropdown-item" href="#">Telones</a>
+          <a class="dropdown-item" href="#">Microfonos</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown" style="position: initial;">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">Accesorios</a>
+        <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink" style="width: 100%">
+          <a class="dropdown-item" href="#">Cables</a>
+          <a class="dropdown-item" href="#">Soporte</a>
+          <a class="dropdown-item" href="#">Pedestales</a>
+          <a class="dropdown-item" href="#">Racks</a>
+        </div>
+      </li>
+
+      <li class="nav-item " style="position: initial;">
+        <a class="nav-link" aria-haspopup="true"
+          aria-expanded="false">Tienda</a>
+      </li>
+
+
+<!--       <li class="nav-item navbarlink"> -->
         <!-- a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false"> -->
-          <%= link_to 'Pro Audio', items_proaudio_path %>
+          <%#= link_to 'Pro Audio', items_proaudio_path %>
 
           <%#= link_to 'Audio-Video', items_audiovideo_path %>
 <!--         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#"></a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Altavoces de instalacion</a>
+          <a class="dropdown-item" href="#">Sistemas completos de PA</a>
+          <a class="dropdown-item" href="#">Subwoffers</a>
+          <a class="dropdown-item" href="#">Amplificadores y processadores de senal</a>
+          <a class="dropdown-item" href="#">Mesas de Mezcla</a>
+          <a class="dropdown-item" href="#">Microfonos</a>
+          <a class="dropdown-item" href="#">Audifonos in Air</a>
+          <a class="dropdown-item" href="#">Sistemas Touring</a>
+          <a class="dropdown-item" href="#">Soporte Pedestales</a>
+
         </div> -->
-      </li>
-          <!-- Dropdown -->
-      <li class="nav-item navbarlink" >
-          <%= link_to 'Home Audio', items_homeaudio_path %>
+<!--       </li>
+      <li class="nav-item navbarlink" > -->
+          <%#= link_to 'Home Audio', items_homeaudio_path %>
         <!-- <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" -->
           <!-- aria-expanded="false">Stereo</a> -->
 <!--         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Altavoces de instalacion</a>
+          <a class="dropdown-item" href="#"> Subwoofers </a>
+          <a class="dropdown-item" href="#">Barras de sonido</a>
+          <a class="dropdown-item" href="#">Amplificadores & Receivers </a>
+          <a class="dropdown-item" href="#">Hometheatre </a>
+          <a class="dropdown-item" href="#">WIFI </a>
+          <a class="dropdown-item" href="#">Bluetooth </a>
+
         </div> -->
-      </li>
-          <!-- Dropdown -->
-      <li class="nav-item  navbarlink">
-          <%= link_to 'Corporativo', items_corporativo_path %>
+<!--       </li>
+
+      <li class="nav-item  navbarlink"> -->
+          <%#= link_to 'Corporativo', items_corporativo_path %>
         <!-- <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">Parlantes</a> -->
 <!--         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Monitores & Pizarra interactivas</a>
+          <a class="dropdown-item" href="#">Proyectores</a>
+          <a class="dropdown-item" href="#">Telones</a>
+          <a class="dropdown-item" href="#">Microfonos</a>
         </div> -->
-      </li>
+<!--       </li> -->
           <!-- Dropdown -->
-      <li class="nav-item  navbarlink">
-          <%= link_to 'Tienda', items_path %>
+
+<!--             <li class="nav-item  navbarlink"> -->
+          <%#= link_to 'Audifonos', items_path %>
         <!-- <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">Audifonos</a> -->
 <!--         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
@@ -65,12 +155,34 @@
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
         </div> -->
-      </li>
-    </ul>
+<!--       </li>
+            <li class="nav-item  navbarlink"> -->
+          <%#= link_to 'Accesorios', items_path %>
+        <!-- <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">Audifonos</a> -->
+<!--         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Cables</a>
+          <a class="dropdown-item" href="#">Soporte</a>
+          <a class="dropdown-item" href="#">Pedestales</a>
+          <a class="dropdown-item" href="#">Racks</a>
 
-   <form id="search" >
+        </div> -->
+<!--       </li>
+            <li class="nav-item  navbarlink"> -->
+          <%#= link_to 'Tienda', items_path %>
+        <!-- <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">Audifonos</a> -->
+<!--         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div> -->
+<!--       </li>
+    </ul> -->
+
+<!--    <form id="search" >
     <input id="field" onfocus="clicked()" onblur="normal()" type="text" placeholder="Buscar" />
     <img onclick="clicked()" id="icon" src="http://www.brambauer.de/img/search.png" >
-  </form>
+  </form> -->
 </div>
 </nav>
