@@ -107,10 +107,10 @@
     <img onclick="clicked()" id="icon" src="http://www.brambauer.de/img/search.png" >
   </form> -->
 
-
-  <%= form_tag  items_path, :method => 'get' do %>
-  <%=  text_field_tag :search, params[:search] %>
+  <%= form_tag items_path, :method => 'get' do %>
+  <%=  text_field_tag :search, params[:search], placeholder: "  Buscar" %>
   <% end %>
+
 
 </div>
 </nav>
