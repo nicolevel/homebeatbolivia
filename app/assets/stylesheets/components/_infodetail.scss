@@ -4,20 +4,40 @@
   text-align: center;
   padding-top:5px;
   padding-bottom:5px;
+  transition: transform .6s;
+}
+
+.infodetail:hover{
+  transform: scale(1.1)
 }
 
 .detailrow{
-  border: 1px solid gray;
+  border: 1px solid #ddd ;
   border-radius: 5px;
   margin-top: 5px;
+  box-shadow: 2px 2px 2px gray;
 }
 
 .fa-3x{
   color:#45A9E1 !important;
   margin-bottom: 15px;
+  margin-top: 15px;
+  transition: transform .6s;
 }
 
 .bldetail{
   border-right: 1px solid gray;
   padding-top: 10px;
 }
+
+// .feature-text{
+//   transition: transform .6s
+// }
+
+// .feature-text:hover{
+//   transform: scale(1.1);
+// }
+
+// .fa-3x:hover{
+//   transform: scale(1.1);
+// }
