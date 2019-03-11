@@ -1,5 +1,23 @@
 
-<%= render "shared/filters" %>
+<div class="col-sm-12 col-lg-2 side-filter" style="margin-top:120px;">
+
+<h4>Buscar</h4>
+<br>
+<%#= form_tag items_path, :method => 'get' do %>
+<%#= text_field_tag :search, params[:search], class: "texto-filtro" %>
+<%# end %>
+
+<%= simple_form_for (Search.new) do |f| %>
+<%= f.select :marca, :collection => %W[MARCA Sonos #{"LD Systems"} Polk #{"Bose Professional"} #{"Elite Screen"} Sennheiser Onkyo #{"Adam Hall"} Gravity Shure Soundcraft #{"OSD Audio"} #{"Harman/Kardon"} QSC JBL Crown TEAC AKG #{"Santa Clara"}], :label => "Marca"  %>
+<%= f.select :categoria, :collection => %W[CATEGORIA #{"Altavoces de instalacion"} Monitores #{"Sistemas completos de PA"} Subwoofers #{"Amplificadores y processadores de senal"} #{"Mesas de Mezcla"} Microfonos #{"Audifonos & Monitoreo In Air"} #{"Sistemas Touring"} #{"Cabezas Moviles"} #{"Iluminacion LED"} Lasers #{"Maquinas de Humo"} #{"Cables & Conectores"} #{"Soporte & Pedestales"} #{"Soporte Pedestales"} #{"Monitores & Pizarra interactivas"} Proyectores Telones Cables Soporte Pedestales Racks], :label => "Categoria" %>
+<%= f.input :min_price, :label => "Precio Minimo", input_html: { min: '0', step: 'any' } %>
+<%= f.input :max_price, :label => "Precio Maximo", input_html: { min: '0', step: 'any' } %>
+<%= f.select :color, :collection => %W[COLOR Blanco Negro #{"Blanco & Negro"}] %>
+<%= f.button :submit, 'Buscar', class: 'btn-block' %>
+<% end %>
+
+
+</div>
 
 <div class=" page-wrapper mt-5" >
   <div class="page-inner results">
