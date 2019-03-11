@@ -102,10 +102,15 @@
         </div>
       </li> -->
 
-   <form id="search" >
+<!--    <form id="search" >
     <input id="field" onfocus="clicked()" onblur="normal()" type="text" placeholder="Buscar" />
     <img onclick="clicked()" id="icon" src="http://www.brambauer.de/img/search.png" >
-  </form>
+  </form> -->
+
+
+  <%= form_tag  items_path, :method => 'get' do %>
+  <%=  text_field_tag :search, params[:search] %>
+  <% end %>
 
 </div>
 </nav>

@@ -1,7 +1,6 @@
 class Search < ApplicationRecord
   def search_items
     items = Item.all
-    items = items.where(["nombre LIKE ?", nombre]) if nombre.present?
     items = items.where(["categoria LIKE ?", categoria]) if categoria.present?
     items = items.where(["precio >= ?", min_price]) if min_price.present?
     items = items.where(["precio <= ?", max_price]) if max_price.present?

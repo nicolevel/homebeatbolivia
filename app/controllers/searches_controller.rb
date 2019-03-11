@@ -16,6 +16,6 @@ class SearchesController < ApplicationController
   private
 
   def search_params
-    params.require(:search).permit(:nombre, :categoria, :min_price, :max_price, :marca, :color, :features)
+    params.require(:search).permit( :categoria, :min_price, :max_price, :marca, :color)
   end
 end

@@ -2,12 +2,14 @@ class ItemsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show, :corporativo, :homeaudio, :proaudio]
 
   def index
+    # @items = Item.where(["name LIKE ?", "%#{params[:search]}%"])
     @items = Item.search(params[:search])
   end
 
   def show
     @item = Item.find(params[:id])
     @items = Item.search(params[:categoria])
+
   end
 
   def corporativo
